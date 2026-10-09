@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stain by Kholiyor Safarov</title>
+<meta name="description" content="Stain, a short story by Kholiyor Safarov, translated from the Uzbek by Makhina Normatova.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&display=swap">
+<style>
+/* Layout: a single book column, front matter, text, colophon. Nothing else. */
+:root {
+  --paper: #fbfbf9;
+  --ink: #1d2027;
+  --muted: #5d6270;
+  --rule: #d9dbe0;
+  --lapis: #24447a;
+  --serif: "Literata", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --measure: 34rem;
+  --step-0: clamp(1.0625rem, 0.98rem + 0.35vw, 1.1875rem);
+  --step-title: clamp(2.75rem, 2rem + 3.5vw, 4.25rem);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #13161d; --ink: #dfe0e4; --muted: #9a9fac; --rule: #2c313c; --lapis: #8fa9d8;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #13161d; --ink: #dfe0e4; --muted: #9a9fac; --rule: #2c313c; --lapis: #8fa9d8;
+  color-scheme: dark;
+}
+
+html { -webkit-text-size-adjust: 100%; color-scheme: light; }
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: var(--step-0);
+  line-height: 1.65;
+  font-optical-sizing: auto;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+  padding-inline: 1.25rem;
+  padding-block: 0;
+  margin: 0;
+}
+::selection { background: var(--lapis); color: var(--paper); }
+
+.book { max-width: var(--measure); margin-inline: auto; }
+
+/* Front matter */
+.front {
+  padding-block: clamp(4rem, 12vh, 8rem) 0;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  gap: 1.25rem;
+}
+.author {
+  margin: 0;
+  font-size: 0.8125rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+h1 {
+  margin: 0;
+  font-weight: 400;
+  font-size: var(--step-title);
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+}
+.credit {
+  margin: 0;
+  text-wrap: balance;
+  font-style: italic;
+  color: var(--muted);
+}
+
+/* Eight-pointed star, the girih motif of Samarkand's tilework */
+.star { display: block; margin-inline: auto; color: var(--lapis); }
+.front .star { margin-block: 1.75rem 0; }
+
+/* The text */
+.story { padding-block: 3rem 0; hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word; }
+.story p { margin: 0; text-indent: 1.5em; }
+.story p:first-child { text-indent: 0; }
+.story p:first-child .opening { font-variant-caps: all-small-caps; letter-spacing: 0.05em; }
+
+/* Closing */
+.end { padding-block: 3.5rem clamp(4rem, 10vh, 6rem); text-align: center; display: grid; gap: 2.5rem; }
+.colophon { margin: 0; font-size: 0.9375rem; line-height: 1.7; color: var(--muted); }
+.colophon strong { font-weight: 500; color: var(--ink); }
+
+footer {
+  border-top: 1px solid var(--rule);
+  padding-block: 1.5rem 2.5rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  text-align: center;
+}
+footer p { margin: 0; }
+</style>
+</head>
+<body>
+<article class="book" lang="en">
+  <header class="front">
+    <p class="author">Kholiyor Safarov</p>
+    <h1>Stain</h1>
+    <p class="credit">Translated from the Uzbek by Makhina Normatova</p>
+    <svg class="star" width="30" height="30" viewBox="-11 -11 22 22" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="currentColor" stroke-width="0.9">
+        <rect x="-7" y="-7" width="14" height="14"/>
+        <rect x="-7" y="-7" width="14" height="14" transform="rotate(45)"/>
+      </g>
+    </svg>
+  </header>
+
+  <section class="story" aria-label="Story text">
+    <p><span class="opening">In the morning,</span> while washing his face and hands, the professor involuntarily looked in the mirror and froze: a black spot like a coin had appeared between his eyebrows.</p>
+    <p>“Good heavens!” he said, unable to take his eyes off her. He was losing his mind. Thousands of questions surrounded him: “How did this happen? Or was it there before? If so, why haven’t I seen it until now? Or in one night… I wonder if he’ll leave?”</p>
+    <p>His whole life flashed before his eyes in an instant. His heart sank, and he opened the window. Ancient Choʻponota, the hills of Afrosiyob, Ulugʻbek’s observatory, the domes of the minarets, the splendor of Samarkand… all vanished into thin air. Sadness overtook him… But now he had to leave. Today, an international conference with the participation of leading scientists of the world will be held in Samarkand. Among them is his friend Muhammad Turki, whom he recognizes as a mentor and who is an expert in the life and scientific thought of Eastern and Western Renaissance scholars. He must meet her.</p>
+    <p>As the professor entered the Samarkand International Airport, which resembled the open book “Zij-i Gurgani,” his heart trembled at the grandeur of the building, but ashamed of the stain on his forehead, he lowered his head and tried not to look around too much. He went straight and looked at the takeoff and landing indicator. There was still time for Muhammad Turki’s approaching plane to land. It seemed to him that everyone was looking at him, pointing at him with their hands. He turned around to escape the crowd. His goal was to sit further away. Suddenly, most of those present noticed spots of varying sizes on their foreheads. Looking at those around him, his head spun even more. He didn’t understand anything. “What is this? What if everyone has a spot on their forehead and they don’t notice themselves? Or are they not paying attention even if they see it? Or does it just seem so to me? Or can’t anyone but myself know about me too? What is this a sign of?”</p>
+    <p>Most of the people in the waiting room were in suits and trousers. With phones in their hands, they constantly rummage through information, but they’re not reading carefully. Young people are preoccupied with virtual games. Some walk on jeans, t-shirts, sneakers, as if on a football field… Some women have an Islamic biography, most are revealing…</p>
+    <p>At first, the professor thought, “So there are many foreigners at the airport too.” No, almost all of them were locals. They’re waiting too. Some speak Uzbek, some Russian, others Tajik. Most of them have mixed vocabulary…</p>
+    <p class="d">– “What’s the matter with us?” he said bitterly.</p>
+    <p>He couldn’t sit still. He began to be alarmed by the situation. He saw that a huge mirror was placed nearby. Involuntarily, he approached. A stain on his forehead! His clothes also seemed unsuitable and awkward. He’s become quite thin. His sleeves hung loose, as if he were wearing someone else’s suit, and his tie and shirt collars were too big and unfitting. His eyes were sunken, his forehead wrinkled, his cheeks wrinkled…</p>
+    <p class="d">– “My goodness, man is getting worse and worse year after year…” Moreover, this…</p>
+    <p>Suddenly, he remembered Babur’s lines: “Oh Lord, what has become of me?”</p>
+    <p>At that moment, a woman with a child passed by him. He had a ticket in his hand. He must have been abroad for a long time, as he’s been damaged by European influence. Her son is Uzbek by appearance, but the woman is thin, her hair is yellow, reddish, mixedly dyed, and her lips are puffy. The collar of his blouse is wide enough to catch a man’s breath. His trousers are tight.</p>
+    <p class="d">– My goodness… Or is the stain because of them? – the professor also thought.</p>
+    <p>It was announced that the international flight had landed at the airport. People rushed into the corridor. He also stood up and stared at the door.</p>
+    <p>Finally, in the corridor appeared Muhammad Turki, about seventy years old, wearing black-rimmed glasses, of medium height, with a drooping chin, but his striped tie and suit-pants fit him well, dragging a wheeled suitcase.</p>
+    <p class="d">– “Peace be upon you, teacher!” The professor opened his arms to his friend.</p>
+    <p>“Assalamu alaykum!” the guest put down his suitcase and embraced his friend. – Don’t embarrass someone by calling them a teacher. All the great mentors are here!</p>
+    <p>East and West united. They exchanged long greetings. The professor waited for him to talk about the spot, but he said something else:</p>
+    <p class="d">– “Didn’t you sleep well yesterday, are you tired?”</p>
+    <p>It was as if a mountain had been lifted from the professor’s shoulders. “So, the stain is invisible to others…”</p>
+    <p class="d">– “Everything’s fine…” he stammered. At that moment, he stared intently at the guest’s face, but except for the wrinkles, no spots were visible.</p>
+    <p>“You’re worried,” the guest added.</p>
+    <p class="d">– Ah, now today’s conference… Teachers like you will come. Of course, there will be excitement… Come on, let’s go.</p>
+    <p>They left the airport. Outside, a group of taxi drivers were waiting for a passenger.</p>
+    <p class="d">– Where are you going? Where are we going?</p>
+    <p class="d">– Here’s Gorimir, Registan!</p>
+    <p class="d">– Excursion through the city!</p>
+    <p class="d">– Is there a Siab bazaar, Shah-i-Zinda?</p>
+    <p class="d">– We’re going to Al-Bukhari!</p>
+    <p>The guest suddenly stopped walking. For some reason, his forehead wrinkled.</p>
+    <p class="d">– God willing, will we go to the first hotel? – asked the professor. “Or shall we have some tea?”</p>
+    <p>Muhammad Turki didn’t answer for a while. He took off his glasses and wiped them.</p>
+    <p class="d">– First, let’s visit Imam Bukhari.</p>
+    <p>“Al-Bukhari?” two or three taxi drivers surrounded them.</p>
+    <p>“Yes,” said the professor, embarrassed. In reality, his eyes were on the foreheads of the people around him. Unfortunately, they also had a spot between their eyebrows. The professor began to feel unwell. “Please, only one of you come,” he finally said without showing off.</p>
+    <p>Someone suddenly grabbed his suitcase.</p>
+    <p class="d">– Let’s go, teacher! I’ll take it myself. Luxury car, super cabin, soft tire! Everything is clear!</p>
+    <p>The two teachers exchanged meaningful glances. The guest sat in the back seat. And the professor. They began to observe the surroundings through the window.</p>
+    <p>“Your cities are becoming very beautiful!” said Muhammad Turki. – It wasn’t like this when I came here before. I was amazed to see the symbolism at the airport!</p>
+    <p>The professor nodded contentedly. Now these words did not reach his ears, did not reach his heart.</p>
+    <p class="d">– You have a great history! The future will also be honorable, God willing!</p>
+    <p class="d">– We hope so…</p>
+    <p>The guest began to talk excitedly about great figures. Only then did the professor’s heart fill with pride, and he felt a certain pride in dedicating his life to studying the heritage of ancestors. He resolved to complete the work he had begun and to give his students more topics that would elevate the nation. But the stain clouded his soul. He wanted to ask Muhammad Turki about this, but he couldn’t bring himself to.</p>
+    <p>When the location became visible, Muhammad Turki began to feel uneasy. The professor, handing the taxi driver the money, was completely convinced that he too had a spot on his forehead. He handed her the fare and closed the car door.</p>
+    <p>As soon as the guest got out of the car, he stared at the address and began to pray.</p>
+    <p>“O Allah, thank You, you have brought me, Your humble servant, to such a holy place! You are kind and generous! Grant us the ability to be worthy students of our teachers. Make us intelligent and capable. Don’t make our faces black on Judgment Day, don’t bow our heads…”</p>
+    <p>The professor joined in the prayer, and a shiver ran down his spine. Something inside him seemed to snap. During the pilgrimage, Muhammad Turki sat at the feet of the great muhaddith and recited a long prayer, and tears welled up in his eyes. As he left, he expressed his intention to pray.</p>
+    <p class="d">– The prayer room is here. The professor led him to the mosque. He pointed to the door and ran to the ablution area. He reproached himself for not having done this at the hotel.</p>
+    <p>When he came cleansed, Muhammad Turki was praying near the mosque’s mihrab, raising his hands to the level of his head, crying. The professor also listened and turned towards the qibla. Even after completing the sunnah, the guest didn’t finish the prayer. She whispered prayers to the Creator, and as her lips pressed together, tears streamed down from under her glasses, and with each breath, a whistling sound came from her lungs…</p>
+    <p>Having finished, he got up. Only then did he see his friend standing behind him.</p>
+    <p>“I’m sorry, I’m a little late.”</p>
+    <p class="d">– May Allah answer your prayers.</p>
+    <p>“God willing…” All of us.</p>
+    <p>The guest had become somewhat calm, and the professor was surprised by something else. “Astaghfirullah!” There was no stain on the faces of those in the mosque…</p>
+    <p>“Uzbeks are a happy people with a glorious past…” said Muhammad Turki, getting into the car. – This should be appreciated. We need to raise worthy successors…</p>
+    <p>The professor nodded, but didn’t react.</p>
+    <p>“Now we can settle in a hotel,” said Muhammad Turki. “Then we can go to the conference.”</p>
+    <p class="d">– It would be good if we had a snack in between.</p>
+    <p>“Dinner won’t run away,” he smiled. – I’ve come here and gotten my fill of it! I’m drunk! I felt very light. Thank you!</p>
+    <p class="d">– Don’t say that. God bless the guest!</p>
+    <p class="d">– But I have one more request. After the conference, take me to the observatory of Mirzo Ulugbek.</p>
+    <p class="d">– Okay! Whatever you say!</p>
+    <p class="d">– Thank you. May Allah be pleased with you.</p>
+    <p>The conference was scheduled for the afternoon. By that time, they had already settled into the hotel and, at the professor’s insistence, had lunch. Wherever the professor looked, he saw a spot on his forehead. Gradually he got used to it…</p>
+    <p>Muhammad Turki’s speech at the international conference deeply impressed the attendees. His information about the invaluable contributions of Uzbekistan’s great figures to world science, especially European science, and the formation of a special translation school in Toledo, Spain, as early as the Middle Ages to study their scientific heritage, filled everyone with pride and honor. However, the topics being raised today, the recognition of the nation’s history, and the tasks facing generations did not reach the professor’s ears, did not take root in his heart. His thoughts were clouded. “Everyone has a mark on their forehead, while others don’t care. Everyone is preoccupied with themselves… The stain, though invisible to others, is visible to me?!”</p>
+    <p class="d">– My goodness… – the professor finished completely. Realizing the contagious nature of the stain, he wanted to leave the event, but when his turn came, he read his own lecture on the study of Mirzo Ulugbek’s works abroad. His eyes were fixed on the paper, his thoughts on the spot that was taking over everyone’s forehead. He was enveloped by a black spot on his forehead and thousands of questions about ancestors: why aren’t we producing such scholars again today? Why can’t we find complete works of figures like Beruni, Abu Ali ibn Sina, and Mirzo Ulugbek to this day? Where is Mirzo Ulugbek’s library now?</p>
+    <p>He thought about this until the end of the conference. Throughout his life, he translated the works of Beruni, Mirzo Ulugbek, and Khorezmi, published them, and was proud of his work and ancestors, but he never found himself in such a situation. It seemed to him that the building would crush him or the ground would burst and collapse along with his desk. He went outside and lit a cigarette. He looked around. The city was beautiful, the buildings magnificent, but he imagined himself very small, like a sparrow.</p>
+    <p>The professor didn’t know how long he was lost in thought. A familiar voice called after him: “Domla?” He turned sharply and saw Muhammad Turki. He was very calm and cheerful.</p>
+    <p>“Why did you come up here?”</p>
+    <p class="d">– I’m a little tired… The professor suddenly didn’t know what to say. The conference dragged on.</p>
+    <p class="d">– I understand you. When it comes to our ancestors, when they are recognized, I also suffer because we cannot be worthy descendants of them…</p>
+    <p class="d">– …</p>
+    <p class="d">– The conference is over. Let’s go to the observatory.</p>
+    <p>“After the meeting, we had a cup of tea for the guests…”</p>
+    <p class="d">– Our goal is not to drink tea… Let’s go there without wasting the opportunity. Don’t even think about dinner. A cup of coffee is enough for me. Actually, the most time-consuming thing in our lives is a cup of tea…</p>
+    <p>The professor glanced at his friend. There was endless anguish in his gaze.</p>
+    <p>“Well, fortunately, the apprentice is here.” He will take us.</p>
+    <p>The student, a thin, tall young man studying rare sources related to Uzbekistan abroad, who had come looking for his teacher, took them to the observatory.</p>
+    <p>After a century, the shadow that has enveloped the entire universe has enveloped the statue of Mirzo Ulugbek, proudly gazing to the east, and only the western portal of the observatory is illuminated.</p>
+    <p>The two scholars stood at the foot of Mirzo Ulugbek’s observatory and pondered for a long time. As if they were examining the interior part of this rare monument noted by Abdurazzoq Samarqandi. …”decorated with colorful patterns unmatched in the world, on the walls and ceilings the levels of the sky, minutes, even seconds are counted, and seven planets and “fixed” stars, as well as the globe, seven climates, mountains and deserts, rivers, seas and oceans are depicted.”</p>
+    <p>“Can you imagine,” said Muhammad Turki, “that Mirzo Ulugbek built such a magnificent observatory in the first quarter of the fifteenth century.” He amazed the world with his scientific thinking and identified one thousand eighteen stars. Created a great school. He finished writing such a great work as “Zij.” This book spread through Ali Kushchi to Turkey, and then to Europe. They served as a scientific basis, a unique source.</p>
+    <p>“What can I say…” the professor shook his head. – A person’s mind races. I translate their works and prepare their books, but I myself am very, very embarrassed by this work.</p>
+    <p class="d">– And you and I haven’t yet found, read, and studied not the books they read, but the works they wrote. That’s what worries me… What did our ancestors call us?</p>
+    <p>The guest sighed, the professor shook his head regretfully, and the student looked away.</p>
+    <p class="d">– In the painting in the book by Jan Hevelius, behind Mirzo Ulugbek’s chair, there is a note: “I have left my work to worthy descendants.” “Every time these words come to mind, my anguish increases even more,” said Muhammad Turki.</p>
+    <p>“You’re right, Professor,” the professor said, stroking his forehead. “These words are an oath addressed to you and me, and we are tormented by guilt.”</p>
+    <p>“Let’s go see the museum.” Then we’ll return.</p>
+    <p>The disciple, who had been silently listening to their conversation, also followed them.</p>
+    <p>There was no one inside except the guard. Entering the museum, which tells about the history of Mirzo Ulugbek’s era, his school, and the observatory, the three scholars remained mentally weak and spiritually condemned before the historical truths that were molded and hung on the wall. They stared at the model of the observatory and fell into deep thought. “How did they build such a magnificent structure six centuries ago? Where was the pattern taken from? Or is it all based on what they’ve learned? How can such great thinking be achieved?”</p>
+    <p>They were tormented by many questions. They looked as if they would find the answer if they focused more on the observatory’s copy, but none of them spoke, their thoughts were in harmony with history and the future, ancestors and generations’ thinking. In their imagination, they descended into that era and wandered around the observatory. In such a fleeting moment, the earth seemed to shake, and the light went out. Darkness enveloped the surroundings, and clattering voices began to be heard. Something clattered, a star seemed to fly, and suddenly everything around brightened, the observatory door opened, and Sultan Mirzo Ulugbek, along with Qozizoda Rumi and Ali Qushchi, appeared together.</p>
+    <p>“Peace be upon you!” all three scholars greeted at once.</p>
+    <p>Mirzo Ulugbek replied to the greeting and looked at them one by one. With his hands behind his back, he asked with dignity.</p>
+    <p class="d">– Welcome to my presence, respected scholars.</p>
+    <p>“Have a good day, Your Majesty!” these words escaped the professor’s lips.</p>
+    <p>“What do you want?”</p>
+    <p>The three scholars looked at each other. Muhammad Turki took his glasses and said:</p>
+    <p class="d">– Forgive us, we have come to visit you…</p>
+    <p class="d">– May Allah accept your efforts in seeking knowledge in His presence. Every believer has their own duties and responsibilities. Indeed, the responsibility of scholars is even greater. How do you manage this?</p>
+    <p class="d">– I am promoting the study and dissemination in Europe of the works created by Your Excellency.</p>
+    <p class="d">– It’s not difficult to promote what already exists… Mirzo Ulugbek looked painfully at Qozizoda Rumi. His Eminence watched with keen eyes.</p>
+    <p class="d">– And you? – he turned to the professor.</p>
+    <p>“I… I…” he stammered. – I translated your works. And many of our great ones too. Khorezmi, Beruni, Ibn Sina…</p>
+    <p class="d">– They spread the fame of the Turks throughout the world. What did you create yourself?</p>
+    <p class="d">– …</p>
+    <p class="d">– Have you translated the “Zij” into your native language?</p>
+    <p class="d">– …</p>
+    <p class="d">– Did you find “Al-jabr”? Have you perfected the “Canon of Medicine”?</p>
+    <p class="d">– Forgive me, Your Majesty…</p>
+    <p class="d">– Apology is not characteristic of scholars… How will you face future generations?!</p>
+    <p>The professor looked down.</p>
+    <p>The apprentice broke into a cold sweat. He shifted his weight from his right leg to his left. Trembling, he said in a hoarse voice:</p>
+    <p class="d">– Over the centuries, we have lost much of our spiritual heritage. Most of them have disappeared today. And those that exist in Western libraries, collections, museums… We are identifying these and restoring them.</p>
+    <p class="d">– Bravo! Will there be another awakening? Will Eastern enlightenment emerge?</p>
+    <p class="d">– God willing!</p>
+    <p>In our time, knowledge and thought were as unique to the East as the sun. The West would learn from us.</p>
+    <p class="d">– …</p>
+    <p class="d">– How were these precious books transported to other countries?</p>
+    <p class="d">– After your time, the people suffered greatly… The era of the Abdullatifs began. The student said this and bit his tongue.</p>
+    <p class="d">– Abdullatif is a symbol… Mirzo Ulugbek sighed deeply.</p>
+    <p class="d">– How many years has this atrocity lasted?</p>
+    <p class="d">– Almost five centuries…</p>
+    <p class="d">– What measures were taken against this?</p>
+    <p>“The khans and emirs couldn’t unite…” said the student. – History bears witness to this.</p>
+    <p class="d">– Have the slogans of Hazrat Temur Kuragon been forgotten?</p>
+    <p class="d">– No…</p>
+    <p>“Then why?”</p>
+    <p>“Excuse me…” Historical justice is now being restored…</p>
+    <p class="d">– Without justice, the nation will decline. Knowledge is needed to elevate a nation! The Sultan looked at Ali Kushchi, as if asking if he had something to say.</p>
+    <p>“With your permission,” said Ali Kushchi. Then he asked the student: – In which cities did you study?</p>
+    <p>“In Samarkand…” he hastily replied.</p>
+    <p class="d">– In what other cities?</p>
+    <p class="d">– … Fire burned in the apprentice’s body.</p>
+    <p>Ali Kushchi’s forehead wrinkled.</p>
+    <p class="d">– Have you been to the libraries of Istanbul, Tabriz, and Cairo?</p>
+    <p>Instead of answering, the student blushed and shook his head.</p>
+    <p>“What languages do you know?”</p>
+    <p class="d">– My native language!</p>
+    <p class="d">– And other languages?</p>
+    <p class="d">– I know a little Russian and English…</p>
+    <p class="d">– And Arabic, Persian?</p>
+    <p class="d">– Forgive me.</p>
+    <p class="d">– Isn’t it harmful for scholars not to know these languages?</p>
+    <p>All three scholars drew lines on the ground. Qazizada Rumi joined the conversation.</p>
+    <p>“Actually, if teachers don’t set an example, such demands on students are inappropriate.</p>
+    <p class="d">– You are right! – said Sultan-Ulugbek. Then he looked at the two teachers. “What are you going to do?”</p>
+    <p>“We will not admit young people to higher educational institutions until they learn a foreign language and can read a manuscript source,” said Muhammad Turki.</p>
+    <p>“If you don’t know any foreign language, we have no access to science!” the professor continued.</p>
+    <p>The student also wanted to speak, but Mirzo Ulugbek said:</p>
+    <p class="d">– And the language in which the Holy Quran was revealed, the language spoken by our Prophet Muhammad (peace be upon him)?</p>
+    <p>“I am studying him…” the student’s voice was barely audible.</p>
+    <p>The Sultan’s eyes flashed.</p>
+    <p>“How old are you?”</p>
+    <p class="d">– Twenty-seven.</p>
+    <p>At this age, Hazrat Beruni had completed writing “Osor-al boqiya” and amazed the world. And you? When Hazrat Khwarizmi created “Al-jabr,” when Hazrat Fergani created the device for measuring the level of the Nile River, they were not in your capabilities. What is this?</p>
+    <p>The scholars bowed their heads as if apologizing.</p>
+    <p class="d">– We need to wake up! – emphasized Mirzo Ulugbek. “Teachers should be talented, and young people should be capable!” The entire nation must awaken! This wakefulness must be not only physical, but spiritual! Wake up, people of Turkestan! The Sultan struck his staff on the ground.</p>
+    <p>The earth seemed to shake, and they shuddered as if waking from a dream.</p>
+    <p class="d">– It’s time, the museum is closing! – a voice was heard.</p>
+    <p>The building, its copy, everything is in place. Professor Muhammad looked at Turki. Now a spot had appeared on his forehead too. He began to tremble. He searched for a mirror to examine himself, but couldn’t find it. Suddenly he remembered that he had a phone in his pocket and looked at himself through the filming program. Oh! His face had darkened, and the spot between his eyebrows had grown larger.</p>
+    <p>“What’s the matter with us, teacher?” he said.</p>
+    <p>Muhammad Turki remained silent, staring at the ground. Finally, he raised his head and said:</p>
+    <p>“This must be our punishment…” he said and, bowing his head, headed outside. At that moment, he didn’t even want to talk… The others followed.</p>
+    <p>Dusk had settled over everything, and the call to prayer could be heard from around.</p>
+    <p>“Guide the professor to the hotel,” the professor said to his student. – I will return to the capital.</p>
+    <p>“Stay today too, master,” said the sad student. “What will happen now?” – He pointed to his forehead.</p>
+    <p>“I don’t know…” the professor said with deep anguish.</p>
+    <p>The scholars parted with annoyance. The student took Muhammad Turki and disappeared into the city. The professor went out onto the capital road and got into a taxi. The driver glanced at him and averted his gaze. Silently, he pulled the rope of the road.</p>
+    <p>The destination was far…</p>
+  </section>
+
+  <div class="end">
+    <svg class="star" width="30" height="30" viewBox="-11 -11 22 22" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="currentColor" stroke-width="0.9">
+        <rect x="-7" y="-7" width="14" height="14"/>
+        <rect x="-7" y="-7" width="14" height="14" transform="rotate(45)"/>
+      </g>
+    </svg>
+    <p class="colophon"><strong>Kholiyor Safarov</strong> is a writer from Uzbekistan.<br>
+    English translation by <strong>Makhina Normatova</strong>.</p>
+  </div>
+
+  <footer>
+    <p>&ldquo;Stain&rdquo; &middot; Kholiyor Safarov &middot; tr. Makhina Normatova</p>
+  </footer>
+</article>
+</body>
+</html>
