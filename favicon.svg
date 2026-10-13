@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10.5 -10.5 21 21">
+  <style>
+    .a { stop-color: #24447a; } .b { stop-color: #8a5f78; } .c { stop-color: #e2b47c; }
+    @media (prefers-color-scheme: dark) { .a { stop-color: #8fa9d8; } .b { stop-color: #c58f97; } .c { stop-color: #f0cc94; } }
+  </style>
+  <defs>
+    <!-- dusk over Samarkand: lapis sky above, the last gold at the horizon -->
+    <linearGradient id="dusk" x1="0" y1="-9.9" x2="0" y2="9.9" gradientUnits="userSpaceOnUse">
+      <stop offset="0" class="a"/><stop offset="0.6" class="b"/><stop offset="1" class="c"/>
+    </linearGradient>
+  </defs>
+  <!-- the eight-pointed girih star from the site's ornament -->
+  <path fill="url(#dusk)" d="M0-9.9 2.9-7H7v4.1L9.9 0 7 2.9V7H2.9L0 9.9-2.9 7H-7V2.9L-9.9 0-7-2.9V-7h4.1Z"/>
+</svg>
